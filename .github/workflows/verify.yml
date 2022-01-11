@@ -12,7 +12,7 @@ jobs:
       
       - name: Test HEIC conversion
         run: |
-          ls
+          ls -l
           convert -version
-          convert /logo.jpg -resize 100x100 output1.png
-          convert /img.HEIC -resize 100x100 output2.png
+          convert logo.jpg -resize 100x100 output1.png
+          convert img.HEIC -resize 100x100 output2.png
