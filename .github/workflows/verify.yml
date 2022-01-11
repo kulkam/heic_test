@@ -9,11 +9,14 @@ jobs:
     env:
       RAILS_ENV: test
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
       
       - name: Test HEIC conversion
         run: |
           echo $GITHUB_PATH
           echo $PATH
           convert -version
-          #convert logo.jpg -resize 100x100 output1.png
+          convert logo.jpg -resize 100x100 output1.png
           #convert img.HEIC -resize 100x100 output2.png
