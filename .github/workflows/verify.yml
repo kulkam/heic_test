@@ -38,6 +38,7 @@ jobs:
           sudo ./configure --with-heic=yes 
           sudo make  
           sudo make install
+          sudo ldconfig
   
       - name: Test HEIC conversion
         run: |
