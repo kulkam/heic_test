@@ -45,6 +45,5 @@ jobs:
           
       - name: Test HEIC conversion
         run: |
-          convert -version
-          convert logo.jpg -resize 100x100 output1.png
-          convert img.HEIC -resize 100x100 output2.png
+          magick logo.jpg -resize 100x100 output1.png
+          magick img.HEIC -resize 100x100 output2.png
